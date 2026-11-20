@@ -1,7 +1,7 @@
 {
-  "name": "ExplorationSE Harp Mobil",
-  "short_name": "Harp Mobil",
-  "description": "Live-Histogramme einer simulierten HydraHarp 500 aus PTU-Dateien – noch ohne Geräteanbindung",
+  "name": "TCSPC Live Mobile",
+  "short_name": "TCSPC Live Mobile",
+  "description": "Live-Histogramme und g² – für PicoQuant HydraHarp 500. Simulation aus PTU-Dateien – noch ohne Geräteanbindung. Unabhängige Software, nicht mit PicoQuant verbunden.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",

@@ -1,4 +1,4 @@
-/* Harp Mobil – Web-Client (ohne Build-Schritt, uPlot lokal eingebunden) */
+/* TCSPC Live Mobile – Web-Client (ohne Build-Schritt, uPlot lokal eingebunden) */
 "use strict";
 // Kanalfarben: Blau, Amber-Orange, Grün, Rot (kein Pink); 5–8 für größere Geräte
 const COLORS = ["#38bdf8", "#f5a623", "#34d399", "#ef4444", "#22d3ee", "#a78bfa", "#d9f99d", "#cbd5e1"];
@@ -381,7 +381,7 @@ function renderInfo() {
     ["Anzeige", `${m.n_bins} von ${m.n_bins_full} Bins (×${m.rebin_factor}) à ${(m.bin_width_ps / 1000).toFixed(3)} ns`],
     ["Datenmenge", `${fmtBytes(S.lastBytes || 0)}/Frame · ${m.payload_kBps.toFixed(1)} kB/s · Server ${m.calc_ms} ms`]);
   rows.push(["Clients", String(st.clients ?? "–")]);
-  if (st.version) $("appver").textContent = "ExplorationSE Harp Mobil " + st.version;
+  if (st.version) $("appver").textContent = "TCSPC Live Mobile " + st.version;
   $("infolist").innerHTML = rows.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("");
   if (m) $("progress").firstElementChild.style.width = (m.progress * 100).toFixed(1) + "%";
 }

@@ -1,5 +1,5 @@
 @echo off
-rem ExplorationSE Harp Mobil - einmalige Installation (Windows 10/11, 64 Bit)
+rem TCSPC Live Mobile - einmalige Installation (Windows 10/11, 64 Bit)
 setlocal
 cd /d "%~dp0"
 set "PYEXE="

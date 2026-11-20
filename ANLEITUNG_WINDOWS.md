@@ -1,4 +1,11 @@
-# ExplorationSE Harp Mobil – Anleitung: Betrieb unter Windows mit Zugriff vom Handy über das Internet
+# TCSPC Live Mobile – Anleitung: Betrieb unter Windows mit Zugriff vom Handy über das Internet
+
+**Live-Histogramme und g² – für PicoQuant HydraHarp 500**
+
+**Version 1.1.0 · Stand 20.11.2026**
+
+> **Unabhängige Software:** weder mit der PicoQuant GmbH verbunden noch von ihr unterstützt oder geprüft.
+> PicoQuant, HydraHarp, snAPI und SymPhoTime sind Marken ihrer jeweiligen Inhaber.
 
 Diese Anleitung führt Sie Schritt für Schritt durch Installation, Start und Bedienung der Version 1
 (Simulation aus einer PTU-Datei) auf Ihrem eigenen Windows-PC. Das Handy greift über das Internet
@@ -20,7 +27,7 @@ Handy (Browser, mobile Daten)
 Cloudflare (Internet)
    │  ausgehende Verbindung, von Ihrem PC aufgebaut (cloudflared.exe)
    ▼
-Ihr Windows-PC:  cloudflared.exe  ──►  Harp-Mobil-Server  http://127.0.0.1:8765  (nur lokal)
+Ihr Windows-PC:  cloudflared.exe  ──►  Server              http://127.0.0.1:8765  (nur lokal)
                                          └─ spielt die Demo-PTU-Datei ab und histogrammiert
 ```
 
@@ -56,7 +63,7 @@ Ihr Windows-PC:  cloudflared.exe  ──►  Harp-Mobil-Server  http://127.0.0.1
 
 ## 3. Paket entpacken
 
-1. Speichern Sie `harp-v1.zip` z. B. im Ordner „Downloads“.
+1. Speichern Sie `tcspc-live-mobile-<Version>-komplett.zip` (Programm mit Demodateien) z. B. im Ordner „Downloads“.
 2. Rechtsklick → **„Alle extrahieren…“** → Ziel z. B. `C:\HarpMobil` (kurzer Pfad ohne Sonderzeichen empfohlen).
 3. Danach gibt es den Ordner `C:\HarpMobil\v1` mit u. a. `install_windows.bat`, `start_online.bat`,
    `stop_online.bat`, `start_server.bat` und `README.md`.
@@ -87,7 +94,7 @@ Ihr Windows-PC:  cloudflared.exe  ──►  Harp-Mobil-Server  http://127.0.0.1
 3. Nach 10–30 Sekunden erscheint ein Kasten etwa so:
    ```
    ============================================================================
-     ExplorationSE Harp Mobil ist ONLINE (Cloudflare Quick Tunnel)
+     TCSPC Live Mobile ist ONLINE (Cloudflare Quick Tunnel)
    ============================================================================
      Adresse:      https://beispiel-woerter.trycloudflare.com
      Zugangscode:  K7QM4-XPR9H
@@ -107,7 +114,7 @@ Ihr Windows-PC:  cloudflared.exe  ──►  Harp-Mobil-Server  http://127.0.0.1
 1. Schalten Sie am Handy WLAN ruhig aus – es soll ja über **mobile Daten** funktionieren.
 2. Entweder den **QR-Code** mit der Kamera-App scannen (öffnet den Direkt-Link inklusive Code), **oder** die
    Adresse `https://….trycloudflare.com` von Hand in den Browser tippen.
-3. Ohne Code erscheint die Seite **„Harp Mobil“** mit einem Eingabefeld. Code eingeben → **„Anmelden“**.
+3. Ohne Code erscheint die Seite **„TCSPC Live Mobile“** mit einem Eingabefeld. Code eingeben → **„Anmelden“**.
    Groß-/Kleinschreibung, Leerzeichen und der Bindestrich spielen keine Rolle (`k7qm4 xpr9h` geht auch).
    Zur Sicherheit wird nach mehreren falschen Eingaben kurz gesperrt.
 4. Danach bleibt das Handy angemeldet (Cookie, max. 7 Tage bzw. bis `start_online.bat` neu gestartet wird).

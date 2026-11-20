@@ -1,7 +1,23 @@
-# Änderungsprotokoll – ExplorationSE Harp Mobil
+# Änderungsprotokoll – TCSPC Live Mobile
 
-> Bis Version 1.0.7 hieß das Projekt „ExSE Harp Mobil“ (Repository `ExplorationSE/exse-harp-mobil`, davor
-> „ExSE Harp Mobile“). Die Einträge bis 1.0.7 behalten den damaligen Namen.
+> Bis Version 1.0.8 hieß das Projekt „ExplorationSE Harp Mobil“ (Repository `ExplorationSE/harp-mobil`), bis 1.0.7
+> „ExSE Harp Mobil“ (Repository `ExplorationSE/exse-harp-mobil`, davor „ExSE Harp Mobile“). Die älteren Einträge
+> behalten den damaligen Namen.
+
+## 1.1.0 – 20.11.2026
+
+Umbenennung, keine Funktionsänderung.
+- Neuer Name **TCSPC Live Mobile** mit dem Untertitel „Live-Histogramme und g² – für PicoQuant HydraHarp 500“:
+  Kopfzeile und Infobereich der App, Seitentitel, App-Manifest, Anmeldeseite, `/api/health`, Server- und
+  Skriptmeldungen, README, Anleitung und PDF.
+- Unabhängigkeits- und Markenhinweis oben im README, auf der Titelseite der Anleitung und im Infobereich der App.
+- GitHub-Repository umbenannt in `ExplorationSE/tcspc-live-mobile` (alte Adressen leiten weiter);
+  Download-Dateien heißen jetzt `tcspc-live-mobile-…zip`. Ordner im Zip (`v1`), Installationsordner
+  `C:\HarpMobil\v1`, Python-Paket `harp` und Umgebungsvariablen `HARP_*` bleiben unverändert; bestehende
+  Installationen funktionieren an ihrem Ort weiter.
+- Service-Worker-Cache `harp-mobil-1.1.0-r1`; Einstellungen im Browser bleiben erhalten. Wer die App auf dem
+  Startbildschirm hat, kann sie entfernen und neu hinzufügen, damit der neue Name erscheint.
+- Demodateien unverändert.
 
 ## 1.0.8 – 19.10.2026
 

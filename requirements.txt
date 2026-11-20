@@ -1,4 +1,4 @@
-# ExplorationSE Harp Mobil – Laufzeit (alle Pakete als fertige Windows-Wheels verfügbar, kein Compiler nötig)
+# TCSPC Live Mobile – Laufzeit (alle Pakete als fertige Windows-Wheels verfügbar, kein Compiler nötig)
 fastapi>=0.110,<1
 uvicorn[standard]>=0.29,<1
 numpy>=1.26
